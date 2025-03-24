@@ -1,0 +1,13 @@
+
+services:
+  dhcp:
+    image: rardcode/dhcp
+    container_name: dhcp
+    environment:
+      - TZ=Europe/Rome
+      #- DHCP4=0 # (decomment for disable DHCPv4 server, default enabled|1)
+      #- DHCP6=1 # (enable DHCPv6 server, default disabled|0)
+    volumes:
+    - ./data:/data
+    network_mode: host
+    restart: unless-stopped
