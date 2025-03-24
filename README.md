@@ -1,5 +1,11 @@
 # Ipv4/ipv6 Debian based dhcp server
 
+## Quick reference
+* Where to file issues:
+[GitHub](https://github.com/rardcode/dhcp)
+
+* Supported architectures: amd64 , armv7 , arm64v8
+
 ## How to use
 ### After first run it make conf file in `./data` dir. Change it with your parameters and ... relauch it!
 
